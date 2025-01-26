@@ -43,9 +43,9 @@ The following settings must be passed as environment variables as shown in the e
 | Key | Value | Suggested Type | Required | Default |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `GCP_SERVICE_ACCOUNT_KEY_FILE` | Your JSON GCP service account key file. [More info here](https://cloud.google.com/storage/docs/authentication/managing-hmackeys) | `Secret ENV` | **Yes** | N/A |
-| `GCP_STORAGE_BUCKET` | Your GCP Storage bucket name For example, `project` | `Secret ENV` | **Yes** | N/A |
-| `SOURCE_DIR` | The local directory (or file) you wish to sync/upload to GCP Storage. For example, `public` | `ENV` | **Yes** | N/A |
-| `DEST_DIR` | The directory inside of the GCP Storage bucket you wish to sync/upload to. For example, `project/assets`. Defaults to the root of the bucket | `ENV` | No | `/` (root of bucket) |
+| `GCP_STORAGE_BUCKET` | Your GCS bucket name For example, `project` | `Secret ENV` | **Yes** | N/A |
+| `SOURCE_DIR` | The local directory (or file) you wish to sync/upload to GCS. For example, `public` | `ENV` | **Yes** | N/A |
+| `DEST_DIR` | The directory inside of the GCS bucket you wish to sync/upload to. For example, `project/assets`. Defaults to the root of the bucket | `ENV` | No | `/` (root of bucket) |
 
 ## License
 

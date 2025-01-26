@@ -1,0 +1,9 @@
+name: "GCS Sync"
+description: "Sync a directory to an GCS bucket"
+author: weslenng
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: blue

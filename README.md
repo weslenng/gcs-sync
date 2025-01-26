@@ -6,13 +6,13 @@ This simple action uses the [gsutil tool](https://cloud.google.com/storage/docs/
 
 ### `workflow.yml`
 
-Place in a `.yml` file such as this one in your `.github/workflows` folder. [Refer to the documentation on workflow YAML syntax here.](https://help.github.com/en/articles/workflow-syntax-for-github-actions)
+Place in a `.yml` file such as this one in your `.github/workflows` folder. [Refer to the documentation on workflow YAML syntax here](https://help.github.com/en/articles/workflow-syntax-for-github-actions).
 
 Mostly [`gsutil rsync` flags](https://cloud.google.com/storage/docs/gsutil/commands/rsync) are optional to allow for maximum customizability and must be provided by you via `args:`
 
 #### Example
 
-- `-d` mirror source and destination. [See.](https://cloud.google.com/storage/docs/gsutil/commands/rsync#using--d-option-with-caution-to-mirror-source-and-destination)
+- `-d` mirror source and destination. [See](https://cloud.google.com/storage/docs/gsutil/commands/rsync#using--d-option-with-caution-to-mirror-source-and-destination).
 
 ```yaml
 name: gcs-sync
@@ -43,7 +43,7 @@ The following settings must be passed as environment variables as shown in the e
 | Key | Value | Suggested Type | Required | Default |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `GCP_SERVICE_ACCOUNT_KEY_FILE` | Your JSON GCP service account key file. [More info here](https://cloud.google.com/storage/docs/authentication/managing-hmackeys) | `Secret ENV` | **Yes** | N/A |
-| `GCP_STORAGE_BUCKET` | Your GCS bucket name For example, `project` | `Secret ENV` | **Yes** | N/A |
+| `GCP_STORAGE_BUCKET` | Your GCS bucket name. For example, `project` | `Secret ENV` | **Yes** | N/A |
 | `SOURCE_DIR` | The local directory (or file) you wish to sync/upload to GCS. For example, `public` | `ENV` | **Yes** | N/A |
 | `DEST_DIR` | The directory inside of the GCS bucket you wish to sync/upload to. For example, `project/assets`. Defaults to the root of the bucket | `ENV` | No | `/` (root of bucket) |
 
